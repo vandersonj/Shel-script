@@ -1,5 +1,0 @@
-#Add Grupo Grafan Viewer
-dn: cn=gG_Grafana_Viewer,ou=groups,dc=ldapmaster,dc=local
-changetype: modify
-add: memberuid
-memberUid: 123654
