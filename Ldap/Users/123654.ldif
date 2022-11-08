@@ -1,0 +1,12 @@
+dn: uid=123654,ou=Gerentes,ou=people,dc=ldapmaster,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 123654
+gidNumber: 0
+givenName: MARIA
+sn: LUIZA SILVA
+displayName:  MARIA LUIZA SILVA
+homeDirectory: /home/123654
+cn:  MARIA LUIZA SILVA
+userPassword:{MD5}Cm5y/UtUIblJ+voVsAi7+g==

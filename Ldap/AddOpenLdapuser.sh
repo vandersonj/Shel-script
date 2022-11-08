@@ -16,8 +16,6 @@ MD5=`echo -n ${PWD}| openssl dgst -md5 -binary | openssl enc -base64`
 #echo " cn = "${NAME}
 #echo " Password = "${MD5}
 
-cn=gG_Grafana_Viewer,ou=groups,dc=ldapmaster,dc=filiais,dc=local
-
 touch $DIRETORIO"/"$USER.ldif
 echo "dn: uid="${USER}","$DNGRUPO >> $DIRETORIO"/"$USER.ldif
 echo "objectClass: inetOrgPerson" >> $DIRETORIO"/"$USER.ldif
@@ -50,6 +48,3 @@ echo ldapmodify -Y EXTERNAL -H ldapi:// -f $DIRETORIO"/G"$USER.ldif
 
 
 done < ${LISTA}
-#sleep 30
-rm -f $DIRETORIO/*.ldif
-
